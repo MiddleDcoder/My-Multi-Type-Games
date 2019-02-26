@@ -33,7 +33,71 @@
             android:layout_height="wrap_content"
             android:textSize="35sp"
             android:text="Catch Hustle"
-            android:layout_marginBottom="300dp"/>
+            android:layout_marginBottom="30dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:layout_marginTop="80dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/black"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reduce the Width / Game Over"
+                android:textSize="20sp"
+                android:layout_margin="10dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/pink"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Increase the Width and 30 Points"
+                android:textSize="18sp"
+                android:layout_margin="10dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/orange"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 Points"
+                android:textSize="18sp"
+                android:layout_margin="10dp"/>
+
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -45,6 +109,8 @@
                 android:layout_height="50dp"
                 android:background="@drawable/ic_action_name_play_catch_hustle"
                 android:layout_gravity="center"
+
+                android:layout_marginTop="50dp"
                 android:id="@+id/play_catchHustle"
                 />
 

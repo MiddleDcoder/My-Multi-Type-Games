@@ -11,7 +11,7 @@ import android.widget.Button;
 
 public class MainSelection extends AppCompatActivity {
 
-    Button monsterDash, catchHustle, exitButton;
+    Button monsterDash, catchHustle, exitButton, anagramLogic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,9 @@ public class MainSelection extends AppCompatActivity {
 
         monsterDash = (Button) findViewById(R.id.monsterDash);
         catchHustle = (Button) findViewById(R.id.catchHustle);
+        anagramLogic = findViewById(R.id.anagramLogic);
         exitButton = (Button) findViewById(R.id.exitButton);
+
 
 
 
@@ -56,14 +58,30 @@ public class MainSelection extends AppCompatActivity {
             }
         });
 
+        anagramLogic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(
+                        MainSelection.this, MainActivityAnagramLogic.class
+                ));
+            }
+        });
+
 
         exitButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                finish();
-                System.exit(0);
-                moveTaskToBack(true);
+                if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+                    finishAndRemoveTask();
+                }else{
+                    finish();
+                    System.exit(0);
+                }
+
+
+               // moveTaskToBack(true);
+
             /*    if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT){
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                         MainSelection.super.finishAndRemoveTask();

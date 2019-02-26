@@ -9,6 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -16,55 +18,74 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Select a Game"
-            android:textSize="25sp"
-            android:layout_marginBottom="450dp"/>
+            android:id="@+id/selectgame"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="50dp"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="400dp"
+            android:text="Multi Type Games"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
 
     </LinearLayout>
 
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:layout_centerInParent="true">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="108dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
 
         <Button
+            android:id="@+id/monsterDash"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:id="@+id/monsterDash"
             android:layout_marginTop="20dp"
             android:text="Monster Dash" />
 
 
         <Button
+            android:id="@+id/catchHustle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Catch Hustle"
             android:layout_gravity="center_vertical"
-            android:id="@+id/catchHustle"
             android:layout_marginTop="20dp"
-            />
-
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:layout_centerInParent="true">
+            android:text="Catch Hustle" />
 
         <Button
+            android:id="@+id/anagramLogic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginTop="20dp"
-            android:text="Exit"
-            android:id="@+id/exitButton"/>
+            android:text="Anagram Logic" />
 
-    </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/exitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:text="Exit" />
+
+        </LinearLayout>
 
 
     </LinearLayout>
